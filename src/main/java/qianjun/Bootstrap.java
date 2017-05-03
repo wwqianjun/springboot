@@ -22,11 +22,11 @@ public class Bootstrap implements CommandLineRunner {
   private HelloMessageService helloService;
 
   public static void main(String[] args) {
-//    SpringApplication.run(Main.class, args);
+    SpringApplication.run(Bootstrap.class, args);
 
-    SpringApplication app = new SpringApplication(Bootstrap.class);
-    app.setBannerMode(Banner.Mode.OFF);
-    app.run(args);
+//    SpringApplication app = new SpringApplication(Bootstrap.class);
+//    app.setBannerMode(Banner.Mode.OFF);
+//    app.run(args);
   }
 
   @Override
@@ -37,6 +37,6 @@ public class Bootstrap implements CommandLineRunner {
       System.out.println(helloService.getMessage());
     }
 
-    exit(0);
+//    exit(0);
   }
 }
