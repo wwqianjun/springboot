@@ -1,0 +1,14 @@
+.idea/
+.settings/
+target/
+.classpath
+.project
+*.iml
+*.jar
+*/bin/*
+logback/
+.DS_Store
+logs/
+*/.gitignore
+*.ipr
+*.iws
