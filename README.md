@@ -21,3 +21,12 @@ public class SpringBootConsoleApplication implements CommandLineRunner {
     }
 }
 ```
+
+#### MySQL + Druid example
+
+Database Connection Pooling
+Spring Boot uses Tomcat pooling tomcat-jdbc by default, and follow this sequence to find the connection pool :
+```
+Tomcat pool -->> - HikariCP -->>  Commons DBCP -->>  Commons DBCP2
+```
+Read this official Spring Boot doc – Connection to a production database
